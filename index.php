@@ -90,5 +90,31 @@ $change = (int)'5'; // Here we change the string data into a iteger data.
 var_dump($change);
 $change = (float)'5'; // Here we change the string data into a float data.
 var_dump($change);
+echo '<br>';
+
+
+/* booleans*/
+
+// 0 and -0 is = false
+// -0 and -0.0 is = false
+// '' = false
+// '0' =  false
+// [] = false
+// null = false
+
+//$x = true;
+//$x = false;
+$x = '';
+//$x = 'false';
+
+var_dump($x);
+ 
+if($x){
+  echo 'success';
+}else{
+  echo 'fail';
+}
+
+
 
 ?>
