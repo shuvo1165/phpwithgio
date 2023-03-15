@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 // Dispaly single line with echo syntex
 echo 'Hello world.<br>';
 
@@ -54,4 +55,40 @@ echo $x,$Rim;
 echo '<br>';
 echo $x,$$x;
 echo '<br>';
+
+
+/* php data type and type casting. */
+
+# 4 scalery type data
+  // int
+  // float
+  // string
+  // bolean
+# 4 compound type data
+  // array
+  // object
+  // callable
+  // interable
+# 2 special type data
+  // resource 
+  // null 
+
+
+// To see the data type we can use var_dump()
+var_dump($x);
+/* php automaticaly cast the data type. But we can strict the data type as we expect. declare(strict_types=1); statement have to put top of the script */
+//declare(strict_types=1);
+
+function sum(int $x,int $y){
+  return $x+$y;
+}
+echo sum(1,4).'<br>';
+
+/*Change the data type or type casting*/
+
+$change = (int)'5'; // Here we change the string data into a iteger data.
+var_dump($change);
+$change = (float)'5'; // Here we change the string data into a float data.
+var_dump($change);
+
 ?>
