@@ -112,9 +112,27 @@ var_dump($x);
 if($x){
   echo 'success';
 }else{
-  echo 'fail';
+  echo 'fail'.'<br>';
 }
+/* Integer */
 
+// To get decimal integer value, it is the treditional way.
+$x = 25;
+// To get hexa-decimal value , have to use 0x before the value.
+$x = 0x25; // it will convert the hexa-decimal value to decimal and assign into $x
+var_dump($x);
+// Maximum integer value a varible can assign in php
+$x = PHP_INT_MAX;
+var_dump($x);
+// Integer type casting
+
+$x = (int)'2000'; // convert string data into integer
+$x = (int)'abcd'; // it will convert into 0
+$x = (int)'20_abcd';// it will convert into iteger 20
+
+// to varify the value is integer or not
+var_dump(is_int($x)); // will display bollean value 1 or 0 
+var_dump($x);
 
 
 ?>
