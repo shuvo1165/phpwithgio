@@ -135,4 +135,26 @@ var_dump(is_int($x)); // will display bollean value 1 or 0
 var_dump($x);
 
 
+/* Float */
+
+$x = 0.23;
+var_dump($x);
+$y = 1-0.77;
+echo $x+$y;
+
+if($x==$y){
+  echo 'True'.'<br>';
+}else{
+  echo 'false'.'<br>';
+}
+// floor method return only integer value
+$x =(0.3+0.6)*4;
+echo floor($x);
+// ceil method for roundup the float number
+$x =(0.3+0.6)*4;
+echo ceil($x);
+
+$x = PHP_FLOAT_MAX * 2; // Infinite number
+var_dump(is_finite($x));
+
 ?>
